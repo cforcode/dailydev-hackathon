@@ -1,3 +1,3 @@
 # daily.dev Hackathon
 
-![daily.dev Hackathon](https://pbs.twimg.com/media/FNPC_nBXoAALPt8?format=jpg&name=small)
+![daily.dev Hackathon](/public/screenshot1.png)
