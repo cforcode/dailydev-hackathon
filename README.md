@@ -1,6 +1,6 @@
-# Next.js + Tailwind CSS Example
+# daily.dev Hackathon
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+![daily.dev Hackathon](https://pbs.twimg.com/media/FNPC_nBXoAALPt8?format=jpg&name=small)
 
 ## Deploy your own
 
