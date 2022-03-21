@@ -51,20 +51,22 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex w-full flex-1 flex-col justify-center px-20">
-        <h1>{feed.link}</h1>
-        <h1>{feed.description}</h1>
-        {feed.items.map((item: CustomItem) =>
-          <div className="py-2">
-            <div className="flex items-center space-x-4  bg-slate-100">
+        <h1 className='text-2xl mt-4 text-blue-600 font-bold'>{feed.description}</h1>
+        <a className='mb-4' href={feed.link} target='_blank'>{feed.link}</a>
+        {feed.items.map((item: CustomItem, key: number) =>
+          <div className="py-2" key={key}>
+            <div className="flex items-center space-x-4  bg-slate-50">
               <div className="flex-1 min-w-0 px-4 py-2">
-                <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                <p className="text-sm font-semibold text-gray-900 truncate dark:text-white">
                   {item.title}
                 </p>
-                <a href='#' className="text-sm text-gray-500 truncate dark:text-gray-400 mb-2">
+                <a href='#' className="text-sm font-light text-gray-500 truncate dark:text-gray-400 mb-2">
                   {`https://app.daily.dev/posts/${item.guid}`}
                 </a>
+              </div>
+              <div className="flex-2 min-w-0 px-4 py-2">
                 <div className='flex'>{item.categories?.map((category) =>
-                  <div className='mr-2 p-2 rounded-lg text-blue-600'>{category}</div>)}
+                  <div className='mr-2 p-2 rounded-lg text-blue-600 bg-blue-50 text-xs'>{category}</div>)}
                 </div>
               </div>
             </div>
